@@ -1,0 +1,18 @@
+# 构建产物与本地文件，不提交到仓库
+build/
+dist/
+.DS_Store
+
+# 编译中间产物
+*.o
+*.dSYM
+*.swiftmodule
+*.pcm
+
+# Python
+__pycache__/
+*.pyc
+
+# Xcode（本项目不需要，但避免误提交）
+xcuserdata/
+*.xcuserstate

@@ -1,0 +1,502 @@
+[
+  {
+    "key": "TCMz",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 热点（最高核心测点）",
+    "confidence": "high",
+    "typicalIdle": 91.5,
+    "typicalLoad": 95.5,
+    "evidence": "全实验 89.2–96.4°C，为 CPU 家族最高；与 Tp1C/Tp3T 差值恒 0.0°C（同传感器别名）；P 核负载 +2.6°C、P 核空闲的 MEM 阶段 -4.0°C，响应最强 → 适合作 CPU 主指标/热点"
+  },
+  {
+    "key": "TCMb",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 芯片平均（封装测点）",
+    "confidence": "medium",
+    "typicalIdle": 86.8,
+    "typicalLoad": 89.3,
+    "evidence": "与 TVD0 差值恒 0.01°C（别名）；全实验 83.8–90.0°C，居 CPU 家族中位；+0.8/+1.2°C 随 P 负载上升，MEM 阶段 -3.3°C；推断为 CPU die 平均口径，未见公开键表佐证"
+  },
+  {
+    "key": "Tp01",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 性能核心 1",
+    "confidence": "medium",
+    "typicalIdle": 82.2,
+    "typicalLoad": 87.2,
+    "evidence": "Stats M4 键表第一个 P 核；与 Tp00 恒差 7.1°C（同传感器双校准），与 Tp0Y 同值（别名）；P 核负载 +2.2°C，MEM（P 核空闲）-5.3°C；4 个 P 核之一"
+  },
+  {
+    "key": "Tp05",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 性能核心 2",
+    "confidence": "medium",
+    "typicalIdle": 81.1,
+    "typicalLoad": 86.2,
+    "evidence": "Stats M4 'performance core 2'；与 Tp04 恒差 7.1°C；P 核负载 +2.0°C，MEM -4.6°C；4 个 P 核之一"
+  },
+  {
+    "key": "Tp09",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 性能核心 3",
+    "confidence": "medium",
+    "typicalIdle": 83.8,
+    "typicalLoad": 87.7,
+    "evidence": "Stats M4 'performance core 3'；与 Tp08 恒差 7.1°C；P 核负载 +1.9°C，MEM -4.5°C；4 个 P 核之一"
+  },
+  {
+    "key": "Tp0D",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 性能核心 4",
+    "confidence": "medium",
+    "typicalIdle": 82.3,
+    "typicalLoad": 85.3,
+    "evidence": "Stats M4 'performance core 4'；与 Tp0C 恒差 7.1°C；P 核负载 +1.7°C，MEM -3.5°C；4 个 P 核之一"
+  },
+  {
+    "key": "Te05",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 能效核心 1",
+    "confidence": "medium",
+    "typicalIdle": 84.0,
+    "typicalLoad": 86.3,
+    "evidence": "Stats M4 'efficiency core 1'；与 Te04 恒差 6.7°C；全体 81.4–86.6°C；E 家族对 P 核负载敏感度仅为 Tp 家族 ~43%（符合 E 簇已被后台负载压满）；6 个 E 核之一"
+  },
+  {
+    "key": "Te0S",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 能效核心 2",
+    "confidence": "medium",
+    "typicalIdle": 83.4,
+    "typicalLoad": 84.9,
+    "evidence": "Stats M4 'efficiency core 2'；与 Te0R 恒差 6.7°C；E 家族响应 0.6°C（P 负载）；6 个 E 核之一，序号按 Stats 原顺序"
+  },
+  {
+    "key": "Te09",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 能效核心 3",
+    "confidence": "medium",
+    "typicalIdle": 83.9,
+    "typicalLoad": 86.2,
+    "evidence": "Stats M4 'efficiency core 3'；与 Te08 恒差 6.7°C；E 家族响应 1.2°C；6 个 E 核之一"
+  },
+  {
+    "key": "Te0H",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 能效核心 4",
+    "confidence": "medium",
+    "typicalIdle": 82.3,
+    "typicalLoad": 84.0,
+    "evidence": "Stats M4 'efficiency core 4'；与 Te0G 恒差 6.7°C；E 家族响应 0.8°C；6 个 E 核之一"
+  },
+  {
+    "key": "Te0V",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 能效核心 5",
+    "confidence": "low",
+    "typicalIdle": 87.8,
+    "typicalLoad": 90.4,
+    "evidence": "Stats M4 只列出 4 个 E 核；本机 M4 为 4P+6E，第 5、6 核按 Te 键块顺序 + 实测独立信号（Te0V 与 Te06 同值、Te0X 与 Te0T 同值）挑选，序号属推断"
+  },
+  {
+    "key": "Te0X",
+    "type": "flt ",
+    "category": "cpu",
+    "displayName": "CPU 能效核心 6",
+    "confidence": "low",
+    "typicalIdle": 88.7,
+    "typicalLoad": 90.3,
+    "evidence": "同上：M4 基础款 6 个 E 核的扩展推断，Te0X 与 Te0T 为同一传感器（恒差），未见外部键表可对照，序号可能调换"
+  },
+  {
+    "key": "Tg0C",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 1",
+    "confidence": "low",
+    "typicalIdle": 80.6,
+    "typicalLoad": 79.7,
+    "evidence": "GPU 家族 18 键可按恒定温差归为 10 个独立信号（=M4 10 核 GPU）；序号按 key 顺序推断，未与物理核编号对照；实测 74.6–84.3°C"
+  },
+  {
+    "key": "Tg0D",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 2",
+    "confidence": "medium",
+    "typicalIdle": 85.2,
+    "typicalLoad": 84.3,
+    "evidence": "smctemp -g（M4 口径=均值(Tg0D,Tg0P,Tg0X,Tg0j)）在 GPU 阶段得 83.2°C，本组四键均值 83.1°C，交叉验证一致；本键全程 79.2–86.5°C 无毛刺，适合作为 GPU 主指标"
+  },
+  {
+    "key": "Tg0H",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 3",
+    "confidence": "low",
+    "typicalIdle": 86.5,
+    "typicalLoad": 85.8,
+    "evidence": "Stats M4 'GPU 2'；与 Tg0G 恒差 4.6°C；GPU 阶段 +1.35°C；偶发 0.1°C 毛刺需过滤"
+  },
+  {
+    "key": "Tg0L",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 4",
+    "confidence": "low",
+    "typicalIdle": 86.7,
+    "typicalLoad": 86.3,
+    "evidence": "Stats M4 GPU 家族键；与 Tg0K 恒差 4.6°C；GPU 阶段 +1.49°C"
+  },
+  {
+    "key": "Tg0P",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 5",
+    "confidence": "low",
+    "typicalIdle": 84.8,
+    "typicalLoad": 84.2,
+    "evidence": "Stats M4 GPU 家族键；与 Tg0O 恒差 4.6°C；GPU 阶段 +1.23°C"
+  },
+  {
+    "key": "Tg0V",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 6",
+    "confidence": "low",
+    "typicalIdle": 83.2,
+    "typicalLoad": 84.5,
+    "evidence": "与 Tg0U 恒差 4.6°C；GPU 阶段 +1.70°C；偶发 0.1°C 毛刺"
+  },
+  {
+    "key": "Tg0Y",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 7",
+    "confidence": "low",
+    "typicalIdle": 85.6,
+    "typicalLoad": 86.4,
+    "evidence": "与 Tg0X 恒差 4.6°C；GPU 阶段 +1.99°C（GPU 家族最大）；偶发 0.1°C 毛刺"
+  },
+  {
+    "key": "Tg0e",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 8",
+    "confidence": "low",
+    "typicalIdle": 85.7,
+    "typicalLoad": 85.9,
+    "evidence": "与 Tg0d 恒差 4.6°C；GPU 阶段 +1.72°C"
+  },
+  {
+    "key": "Tg0k",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 9",
+    "confidence": "low",
+    "typicalIdle": 86.8,
+    "typicalLoad": 86.8,
+    "evidence": "与 Tg0j 恒差 4.6°C；GPU 阶段 +1.66°C；实测中位最高（86.4°C）"
+  },
+  {
+    "key": "Tg0n",
+    "type": "flt ",
+    "category": "gpu",
+    "displayName": "GPU 核心 10",
+    "confidence": "low",
+    "typicalIdle": 86.4,
+    "typicalLoad": 85.8,
+    "evidence": "与 Tg0m 恒差 4.6°C；GPU 阶段 +1.05°C；偶发 0.1°C 毛刺"
+  },
+  {
+    "key": "Tm0B",
+    "type": "flt ",
+    "category": "memory",
+    "displayName": "内存温度（LPDDR5X）",
+    "confidence": "medium",
+    "typicalIdle": 58.0,
+    "typicalLoad": 58.1,
+    "evidence": "Stats M4 有 Tm0p/Tm1p/Tm2p 三个 'Memory Proximity' 键，本机只有 Tm0B；实测 56.7–58.5°C、对 CPU/GPU/内存阶段几乎不敏感（±0.2°C），符合封装内内存慢热特征"
+  },
+  {
+    "key": "TH0x",
+    "type": "flt ",
+    "category": "storage",
+    "displayName": "NAND 闪存",
+    "confidence": "high",
+    "typicalIdle": 55.1,
+    "typicalLoad": 55.1,
+    "evidence": "Stats 键表 TH0x=NAND；与 HID 传感器 'NAND CH0 temp'（52.0°C，整数量化）同刻对照差 1.9°C；与 TH0T 恒等（别名）；实测 54.1–55.6°C，1GB 写入后未明显抬升（0.9s 完成，NAND 热容大）"
+  },
+  {
+    "key": "TB0T",
+    "type": "flt ",
+    "category": "battery",
+    "displayName": "电池 电芯 1",
+    "confidence": "high",
+    "typicalIdle": 29.3,
+    "typicalLoad": 30.0,
+    "evidence": "与 HID 'gas gauge battery' 同刻对照完全一致（31.3/30.2/31.3 vs 31.3/30.2/31.3）；IOKit AppleSmartBattery 的 Temperature 为 0.1K 单位（3023→29.08°C）与本组 29–30°C 吻合；实测 29.2–30.3°C"
+  },
+  {
+    "key": "TB1T",
+    "type": "flt ",
+    "category": "battery",
+    "displayName": "电池 电芯 2",
+    "confidence": "high",
+    "typicalIdle": 28.2,
+    "typicalLoad": 29.0,
+    "evidence": "同上（HID gas gauge battery 第二/第三路）；与 TB0T 恒差 1.1°C"
+  },
+  {
+    "key": "TB2T",
+    "type": "flt ",
+    "category": "battery",
+    "displayName": "电池 电芯 3",
+    "confidence": "high",
+    "typicalIdle": 29.3,
+    "typicalLoad": 30.0,
+    "evidence": "与 TB0T 恒等（别名）；HID 对照一致"
+  },
+  {
+    "key": "TW0P",
+    "type": "flt ",
+    "category": "wireless",
+    "displayName": "Wi-Fi 模块",
+    "confidence": "high",
+    "typicalIdle": 58.1,
+    "typicalLoad": 57.8,
+    "evidence": "Stats 键表 TW0P=Airport；实测 56.5–58.3°C，负载不敏感（Wi-Fi 有其他电源域）；与 Wi-Fi 常开状态一致"
+  },
+  {
+    "key": "TDBP",
+    "type": "flt ",
+    "category": "display",
+    "displayName": "显示屏 背光/面板 A",
+    "confidence": "medium",
+    "typicalIdle": 34.3,
+    "typicalLoad": 34.6,
+    "evidence": "实测 34.2–34.8°C，随环境缓慢漂移；键名与 TDeL 成对，项目早期探测判定为屏幕相关；无公开键表佐证"
+  },
+  {
+    "key": "TDeL",
+    "type": "flt ",
+    "category": "display",
+    "displayName": "显示屏 面板 B",
+    "confidence": "medium",
+    "typicalIdle": 33.7,
+    "typicalLoad": 34.1,
+    "evidence": "实测 33.6–34.5°C，与 TDBP 恒差 0.6°C；同 TDBP 的判据"
+  },
+  {
+    "key": "TAOL",
+    "type": "flt ",
+    "category": "enclosure",
+    "displayName": "机身 / 环境温度",
+    "confidence": "medium",
+    "typicalIdle": 25.0,
+    "typicalLoad": 25.7,
+    "evidence": "实测 25.0–26.0°C，全程几乎恒定、与电池/机身传感器同步（与 TB0T/TB1T/TB2T、Ts0P、TVA0 差值恒定）→ 典型的机身/环境慢变量；注意 Ta0* 多为 0/5 占位键，不要用"
+  },
+  {
+    "key": "TPMP",
+    "type": "flt ",
+    "category": "package",
+    "displayName": "SoC 封装 / PMU 测点 A",
+    "confidence": "low",
+    "typicalIdle": 58.8,
+    "typicalLoad": 59.3,
+    "evidence": "实测 57.6–59.9°C，随 CPU 功率轻微变化（+0.2°C）；键名 MP 疑为 Memory/PMU Proximity，无公开键表佐证"
+  },
+  {
+    "key": "TPSP",
+    "type": "flt ",
+    "category": "package",
+    "displayName": "SoC 封装 / PMU 测点 B",
+    "confidence": "low",
+    "typicalIdle": 58.7,
+    "typicalLoad": 58.7,
+    "evidence": "实测 57.2–59.3°C，比 TPMP 低 ~0.5°C、同步漂移；推断为封装另一测点"
+  },
+  {
+    "key": "TSCD",
+    "type": "flt ",
+    "category": "package",
+    "displayName": "SoC 芯片测点（SCD）",
+    "confidence": "low",
+    "typicalIdle": 64.9,
+    "typicalLoad": 64.6,
+    "evidence": "实测 62.7–65.5°C，与 GPU 阶段 +0.4°C；键名含义未确认，疑为 SoC die 类测点"
+  },
+  {
+    "key": "TPD0",
+    "type": "flt ",
+    "category": "package",
+    "displayName": "SoC 封装测点 TPD0",
+    "confidence": "low",
+    "typicalIdle": 66.4,
+    "typicalLoad": 69.6,
+    "evidence": "TPD0..TPDF/TPDX 共 17 个 64–70°C 测点，与 HID 'PMU tdie1..14'（62–70°C）量级相符；TPD5/TPDX 在 GPU 阶段 +2.9°C（供电域发热）；具体含义未确认"
+  },
+  {
+    "key": "TPDX",
+    "type": "flt ",
+    "category": "package",
+    "displayName": "SoC 封装测点 TPDX",
+    "confidence": "low",
+    "typicalIdle": 70.5,
+    "typicalLoad": 73.2,
+    "evidence": "与 TPD5、TVV0 恒等（同一传感器 3 个别名）；GPU 阶段 +2.9°C，疑为 GPU 供电域附近 PMU die 测点"
+  },
+  {
+    "key": "TVV0",
+    "type": "flt ",
+    "category": "vrm",
+    "displayName": "供电域温度（GPU 侧）",
+    "confidence": "low",
+    "typicalIdle": 70.4,
+    "typicalLoad": 73.2,
+    "evidence": "与 TPD5/TPDX 同值别名；GPU 阶段 +2.9°C 为全家族最大 → 判断为 GPU 供电域测点"
+  },
+  {
+    "key": "TVM0",
+    "type": "flt ",
+    "category": "vrm",
+    "displayName": "供电域温度（最大 A）",
+    "confidence": "low",
+    "typicalIdle": 80.2,
+    "typicalLoad": 78.3,
+    "evidence": "与 TVMh/TVh1/TVmS 恒等；~79°C，GPU 阶段 -0.7°C（与 CPU 侧耦合更强）；TV 家族疑为 voltage-domain 温度，无公开键表佐证"
+  },
+  {
+    "key": "TVh0",
+    "type": "flt ",
+    "category": "vrm",
+    "displayName": "供电域温度（高侧）",
+    "confidence": "low",
+    "typicalIdle": 83.6,
+    "typicalLoad": 81.8,
+    "evidence": "与 TVM0 家族恒差 3.4°C；~82.8°C"
+  },
+  {
+    "key": "TVMm",
+    "type": "flt ",
+    "category": "vrm",
+    "displayName": "供电域温度（最大 B）",
+    "confidence": "low",
+    "typicalIdle": 82.2,
+    "typicalLoad": 79.4,
+    "evidence": "与 TVm1 恒等；~80.9°C"
+  },
+  {
+    "key": "TVm0",
+    "type": "flt ",
+    "category": "vrm",
+    "displayName": "供电域温度（最小 A）",
+    "confidence": "low",
+    "typicalIdle": 77.4,
+    "typicalLoad": 75.4,
+    "evidence": "~76.5°C；与 TVm2/TVM0 同族但独立；TVm* 疑为 memory rail 温度"
+  },
+  {
+    "key": "TVS0",
+    "type": "flt ",
+    "category": "vrm",
+    "displayName": "供电域温度（S0）",
+    "confidence": "low",
+    "typicalIdle": 44.1,
+    "typicalLoad": 44.2,
+    "evidence": "实测 43.7–44.6°C，几乎恒定（±0.1）；另一路供电/传感器轨"
+  },
+  {
+    "key": "TVS1",
+    "type": "flt ",
+    "category": "vrm",
+    "displayName": "供电域温度（S1）",
+    "confidence": "low",
+    "typicalIdle": 45.1,
+    "typicalLoad": 45.2,
+    "evidence": "实测 44.6–45.6°C，与 TVS0 恒差 1.0°C"
+  },
+  {
+    "key": "TCHP",
+    "type": "flt ",
+    "category": "other",
+    "displayName": "未分类测点 TCHP",
+    "confidence": "low",
+    "typicalIdle": 51.6,
+    "typicalLoad": 51.9,
+    "evidence": "实测 50.6–52.9°C，全程基本恒定（对 CPU/GPU/内存负载均无响应，GPU 阶段 +0.8°C 为噪声）；疑为充电/机壳类慢变量"
+  },
+  {
+    "key": "TMVR",
+    "type": "flt ",
+    "category": "other",
+    "displayName": "未分类测点 TMVR",
+    "confidence": "low",
+    "typicalIdle": 54.7,
+    "typicalLoad": 54.9,
+    "evidence": "实测 53.3–55.3°C，几乎不随负载变化"
+  },
+  {
+    "key": "TIOP",
+    "type": "flt ",
+    "category": "other",
+    "displayName": "I/O / 雷电接口",
+    "confidence": "low",
+    "typicalIdle": 44.9,
+    "typicalLoad": 45.0,
+    "evidence": "实测 44.6–45.5°C 恒定；键名 IO 前缀，项目早期探测归为雷电；无公开键表佐证"
+  },
+  {
+    "key": "TRD0",
+    "type": "flt ",
+    "category": "other",
+    "displayName": "未分类测点 TRD0",
+    "confidence": "low",
+    "typicalIdle": 57.9,
+    "typicalLoad": 58.0,
+    "evidence": "TRD0..TRD8/TRDX 共 10 个 55–58°C 测点，对负载几乎不敏感（±0.3°C）；含义未确认"
+  },
+  {
+    "key": "T5SP",
+    "type": "flt ",
+    "category": "other",
+    "displayName": "未分类测点 T5SP",
+    "confidence": "low",
+    "typicalIdle": 48.1,
+    "typicalLoad": 48.2,
+    "evidence": "实测 47.6–48.4°C 恒定；疑为固定参考/校准值"
+  },
+  {
+    "key": "Ts0P",
+    "type": "flt ",
+    "category": "other",
+    "displayName": "未分类测点 Ts0P",
+    "confidence": "low",
+    "typicalIdle": 25.9,
+    "typicalLoad": 27.0,
+    "evidence": "实测 25.9–27.1°C，与电池/机身组同漂移（差值恒定）；早前误判为 NAND，已由 HID NAND CH0=52°C 排除，改为低置信度未分类"
+  },
+  {
+    "key": "Ts1P",
+    "type": "flt ",
+    "category": "other",
+    "displayName": "未分类测点 Ts1P",
+    "confidence": "low",
+    "typicalIdle": 25.1,
+    "typicalLoad": 26.1,
+    "evidence": "实测 24.9–26.3°C，与 Ts0P 恒差 0.9°C；同为低速变量"
+  }
+]
