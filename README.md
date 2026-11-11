@@ -1,6 +1,6 @@
 # MacTemp · macOS 温度与系统监控
 
-AIDA64 风格的 macOS 原生硬件监控应用：直接读取 Apple Silicon 的 **SMC 传感器**，实时显示
+macOS 原生硬件监控应用：直接读取 Apple Silicon 的 **SMC 传感器**，实时显示
 CPU / GPU / 内存 / 固态硬盘 / 电池 / 无线模块等各个部件的温度，并附带整机功耗、热压力、风扇、
 实时负载、系统信息与进程列表。菜单栏常驻，随时瞄一眼温度。
 
@@ -189,7 +189,7 @@ MacTemp/
 
 ## 免责声明
 
-- 本项目与 Apple Inc.、AIDA64 官方均无关联；Apple、macOS、Mac、Apple Silicon、AIDA64 等名称/商标归各自权利人所有
+- 本项目与 Apple Inc.官方无关联；Apple、macOS、Mac、Apple Silicon、AIDA64 等名称/商标归各自权利人所有
 - 项目名称「MacTemp」仅用于本仓库，未做商标检索；如计划商用或发布到应用商店，请先自行核实名称
 - AppleSMC 属于 Apple 未公开文档化的 IOKit 接口，仅以只读方式用于本机硬件监控；接口可能随 macOS 更新失效，
   也不适合 Mac App Store 分发
